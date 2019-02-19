@@ -1,0 +1,95 @@
+:root {
+  --font-size: 14px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: lemonchiffon;
+  margin: 0;
+}
+
+body,
+input {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: var(--font-size);
+}
+
+.app-container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+.message-button {
+  background: transparent;
+  border: 0;
+  color: gray;
+  font-size: 14px;
+  padding: 0;
+}
+
+.message-button + .message-button {
+  margin-left: 1rem;
+}
+
+.message-form {
+  border-top: 2px solid lightgray;
+}
+
+.message-form,
+.message,
+.title {
+  background-color: white;
+}
+
+.message-input {
+  border: 0;
+  display: block;
+  padding: 1rem;
+}
+
+.message-input,
+.messages-list {
+  margin: 0 auto;
+  max-width: 768px;
+  width: 100%;
+}
+
+.messages-list {
+  flex-grow: 1;
+  list-style: none;
+  padding: 1rem;
+}
+
+.message {
+  border: 2px solid lightgray;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.time {
+  color: gray;
+  font-size: calc(var(--font-size) * 0.85);
+  margin-bottom: 0;
+}
+
+.title {
+  border-bottom: 2px solid lightgray;
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+}
+
+.user-name {
+  font-weight: bold;
+  text-transform: uppercase;
+}

@@ -1,0 +1,24 @@
+{
+  "name": "chat-server",
+  "version": "1.0.0",
+  "description": "chat server",
+  "scripts": {
+    "dev": "PORT=4000 nodemon src/server --watch src",
+    "dev-windows": "set PORT=4000 && nodemon src/server --watch src",
+    "start": "PORT=4000 node src/server",
+    "start-windows": "set PORT=4000 && node src/server"
+  },
+  "keywords": [],
+  "author": "@durancristhian",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.18.10",
+    "prettier": "^1.16.4"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "mysql": "^2.16.0"
+  }
+}

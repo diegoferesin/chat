@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>chat-client</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="app-container">
+      <h1 class="title">Chat</h1>
+      <ul id="js-list" class="messages-list"></ul>
+      <form action="#!" id="js-form" class="message-form">
+        <input
+          type="text"
+          id="js-input"
+          class="message-input"
+          placeholder="Enter para enviar"
+        />
+      </form>
+    </div>
+    <script src="js/lib/jquery-3.3.1.min.js"></script>
+    <script src="js/utils/evento.js"></script>
+    <script src="js/mvc/controller.js"></script>
+    <script src="js/mvc/model.js"></script>
+    <script src="js/mvc/view.js"></script>
+    <script src="js/init.js"></script>
+  </body>
+</html>
